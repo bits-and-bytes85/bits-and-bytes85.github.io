@@ -51,19 +51,19 @@
   --text-gradient-yellow: linear-gradient(
     to right, 
     hsla(118, 42%, 24%, 0.75), 
-    hsl(118, 62%, 10%, 0.75)
+    hsla(118, 42%, 27%, 0.75)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
+  --jet: hsla(0, 0%, 0%, 0.75);
+  --onyx: hsla(0, 0%, 2%, 0.75);
   --eerie-black-1: hsl(113, 18%, 10%, 0.75);
   --eerie-black-2: hsla(110, 9%, 13%, 0.75);
   --smoky-black: hsl(113, 18%, 10%, 0.75);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsla(120, 26%, 42%, 0.863);
+  --orange-yellow-crayola: hsla(112, 9%, 34%, 0.75);
   --vegas-gold: hsla(120, 41%, 63%, 0.863);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -170,7 +170,7 @@ article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 30px;
+  padding: 60px;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -459,7 +459,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(118, 62%, 10%, 0.75);
+  background: hsla(112, 9%, 34%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
