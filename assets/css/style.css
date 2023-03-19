@@ -58,9 +58,9 @@
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(118, 62%, 10%, 0.75);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --eerie-black-1: hsl(113, 18%, 10%, 0.75);
+  --eerie-black-2: hsla(110, 9%, 13%, 0.75);
+  --smoky-black: hsl(113, 18%, 10%, 0.75);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsla(120, 26%, 42%, 0.863);
@@ -170,7 +170,7 @@ article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 15px;
+  padding: 30px;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
