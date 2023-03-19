@@ -57,13 +57,13 @@
   /* solid */
 
   --jet: hsla(0, 0%, 0%, 0.75);
-  --onyx: hsla(0, 0%, 2%, 0.75);
+  --onyx: hsla(120, 64%, 6%, 0.75);
   --eerie-black-1: hsl(113, 18%, 10%, 0.75);
   --eerie-black-2: hsla(110, 9%, 13%, 0.75);
   --smoky-black: hsl(113, 18%, 10%, 0.75);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsla(112, 9%, 34%, 0.75);
+  --orange-yellow-crayola: hsla(120, 3%, 12%, 0.75);
   --vegas-gold: hsla(120, 41%, 63%, 0.863);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -303,7 +303,7 @@ article.active {
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
-  min-width: 259px;
+  min-width: 100px;
 }
 
 
