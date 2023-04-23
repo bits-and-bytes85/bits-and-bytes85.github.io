@@ -35,13 +35,13 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsla(118, 100%, 65%, 0.75) 0%, 
-    hsl(140, 100%, 50%) 50%
+    hsla(118, 100%, 82%, 0.75) 0%, 
+    hsl(140, 80%, 58%) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsl(117, 68%, 36%) 0%, 
-    hsl(108, 75%, 33%) 59.86%
+    hsl(116, 57%, 11%) 0%, 
+    hsl(108, 100%, 8%) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
