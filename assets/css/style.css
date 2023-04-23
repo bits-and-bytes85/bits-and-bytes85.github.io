@@ -462,7 +462,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(112, 9%, 34%, 0.75);
+  background: hsla(97,28,57);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -799,7 +799,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: hsl(97,28,57);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
