@@ -58,9 +58,9 @@
 
   --jet: hsla(0, 0%, 0%, 0.75);
   --onyx: hsla(0, 0%, 0%, 0.75);
-  --eerie-black-1: hsla(0, 100%, 28%, 0.95);
+  --eerie-black-1: hsl(0, 0%, 100%);
   --eerie-black-2: hsla(97,28,57);
-  --smoky-black: hsla(113, 100%, 50%, 0.582);
+  --smoky-black: hsl(112, 96%, 11%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsla(120, 47%, 70%, 0.979);
