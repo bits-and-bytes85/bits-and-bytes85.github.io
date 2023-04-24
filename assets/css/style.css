@@ -57,13 +57,14 @@
   /* solid */
 
   --jet: hsla(0, 0%, 0%, 0.75);
-  /*card color*/
-  --onyx: hsla(0, 0%, 0%, 0.75);
-  --eerie-black-1: hsl(0, 0%, 100%);
-  /*sidebar color*/
-  --eerie-black-2: hsl(97,28,57);
+  /*subtitle under name color*/
+  --onyx: hsla(124, 100%, 3%, 0.918);
+/*icon color*/
+  --eerie-black-1: hsl(124, 100%, 3%, 0.918);
+  /*sidebar and main color*/
+  --eerie-black-2: hsl(125, 84%, 12%);
   /* background color */
-  --smoky-black: hsl(112, 96%, 11%);
+  --smoky-black: hsl(112, 27%, 60%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsla(120, 47%, 70%, 0.979);
@@ -132,7 +133,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time, span { display: block;  }
 
 button {
   font: inherit;
@@ -146,7 +147,8 @@ input, textarea {
   display: block;
   width: 100%;
   background: none;
-  font: inherit;
+  font: inherit;  background: hsla(124, 100%, 3%, 0.918);
+
 }
 
 ::selection {
@@ -277,7 +279,8 @@ article.active {
 
 .content-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: hsla(124, 100%, 3%, 0.918);
+  
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -322,6 +325,7 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
+  
 }
 
 .sidebar.active { max-height: 405px; }
@@ -336,7 +340,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 .info-content .name {
@@ -349,7 +353,7 @@ main {
 
 .info-content .title {
   color: var(--white-1);
-  background: var(--onyx);
+  background: hsla(124, 100%, 3%, 0.918);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -462,7 +466,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(0, 199, 10);
+  background: hsla(124, 100%, 7%, 0.918);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -527,7 +531,8 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: hsla(123, 100%, 11%, 0.918);
+  /*background: var(--border-gradient-onyx);*/
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -538,7 +543,8 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: hsla(124, 100%, 3%, 0.918);
+  /*background: var(--bg-gradient-jet);*/
   border-radius: inherit;
   z-index: -1;
 }
@@ -839,8 +845,15 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list {  
+ color: hsla(124, 100%, 3%, 0.918);
+  padding: 20px; 
+margin-bottom: 40px }
 
+.skills-list .content-card {
+  background: hsla(124, 100%, 3%, 0.918);
+
+}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
@@ -849,9 +862,11 @@ main {
   align-items: center;
   gap: 5px;
   margin-bottom: 8px;
+  
 }
 
 .skill .title-wrapper data {
+  
   color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
@@ -1423,6 +1438,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .content-card {
     padding: 30px;
     padding-top: 25px;
+    background: hsla(124, 100%, 3%, 0.918);
+
   }
 
   .testimonials-avatar-box {
