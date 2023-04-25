@@ -47,6 +47,35 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     })
 }
 
+// projects variables
+const projectItem = document.querySelectorAll('[data-project-item]')
+
+// modal toggle function
+const projectModalFunc = function () {
+    modalContainer.classList.toggle('active')
+    overlay.classList.toggle('active')
+}
+
+// add click event to all modal items
+for (let i = 0; i < projectItem.length; i++) {
+    projectItem[i].addEventListener('click', function () {
+        modalImg.src = this.querySelector('[data-project-img]').src
+        modalImg.alt = this.querySelector('[data-project-img]').alt
+        modalTitle.innerHTML = this.querySelector(
+            '[data-project-title]'
+        ).innerHTML
+        modalText.innerHTML = this.querySelector(
+            '[data-project-text]'
+        ).innerHTML
+
+        testimonialsModalFunc()
+    })
+}
+
+// add click event to modal close button
+modalCloseBtn.addEventListener('click', testimonialsModalFunc)
+overlay.addEventListener('click', testimonialsModalFunc)
+
 // add click event to modal close button
 modalCloseBtn.addEventListener('click', testimonialsModalFunc)
 overlay.addEventListener('click', testimonialsModalFunc)
