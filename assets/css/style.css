@@ -62,9 +62,9 @@
 /*icon color*/
   --eerie-black-1: hsl(124, 100%, 3%, 0.918);
   /*sidebar and main color*/
-  --eerie-black-2: hsl(125, 84%, 12%);
+  --eerie-black-2:rgb(0, 64, 34);
   /* background color */
-  --smoky-black: hsl(112, 27%, 60%);
+  --smoky-black: hsl(111, 38%, 53%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsla(120, 47%, 70%, 0.979);
