@@ -60,7 +60,7 @@
   /*subtitle under name color*/
   --onyx: hsla(124, 100%, 3%, 0.918);
 /*icon color*/
-  --eerie-black-1: hsl(124, 100%, 3%, 0.918);
+  --eerie-black-1: hsla(124, 100%, 3%, 0.959);
   /*sidebar and main color*/
   --eerie-black-2:rgb(0, 64, 34);
   /* background color */
@@ -115,7 +115,86 @@
 
 }
 
+/*MODAL ITEMS*/
 
+.cta {
+  background-color: rgb(231, 3, 3);
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  color: tomato;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  z-index:0;
+}
+.cta:hover{
+    background-color: lightgrey;
+    color: slategrey;
+    text-decoration: none;
+}
+
+.modaloverlay {
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: none;
+  font-size: 16px;
+  
+}
+
+.modaloverlay:target{
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+
+.modal {
+  
+    background-color: white;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    text-size-adjust: auto;
+    @media (min-width: 60em) {
+      height: 85%;
+      margin: 5% auto;
+      max-height: 40em;
+      max-width: 70em;
+      width: 90%;
+    }
+    
+  }
+
+  .close {
+    background-color: rgb(1, 27, 2);
+    color: white;
+    font-size: 24px;
+    padding: 8px 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+    
+  }
 
 
 
@@ -466,7 +545,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(124, 100%, 7%, 0.918);
+  background: hsla(125, 86%, 5%, 0.918);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
