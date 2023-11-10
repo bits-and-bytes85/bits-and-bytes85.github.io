@@ -64,7 +64,7 @@
   /*sidebar and main color*/
   --eerie-black-2:rgb(0, 64, 34);
   /* background color */
-  --smoky-black: hsl(111, 38%, 53%);
+  --smoky-black: rgb(0, 64, 34);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsla(120, 47%, 70%, 0.979);
@@ -240,8 +240,8 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
-
+body { background: var(--bg-gradient-yellow-2); }
+/*background-image: url('background.jpg'*/
 
 
 
@@ -346,12 +346,12 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--onyx);
+  background: var(--bg-gradient-yellow-2);
   border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: var(--bg-gradient-yellow-2);
   border-radius: 5px;
 }
 
@@ -1092,7 +1092,7 @@ margin-bottom: 40px }
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-img > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1896,7 +1896,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
-    background: hsl(97, 28%, 57%);
+    background: hsl(105, 45%, 12%);
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
                 inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
