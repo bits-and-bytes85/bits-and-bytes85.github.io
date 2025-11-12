@@ -76,9 +76,56 @@ for (let i = 0; i < projectItem.length; i++) {
 modalCloseBtn.addEventListener('click', testimonialsModalFunc)
 overlay.addEventListener('click', testimonialsModalFunc)
 
-// add click event to modal close button
-modalCloseBtn.addEventListener('click', testimonialsModalFunc)
-overlay.addEventListener('click', testimonialsModalFunc)
+// project modal variables
+const projectModalItems = document.querySelectorAll('[data-project-modal]')
+
+// add click event to all project modal items
+for (let i = 0; i < projectModalItems.length; i++) {
+    const projectLink = projectModalItems[i].querySelector('.project-link')
+    const projectModalOverlay = projectModalItems[i].querySelector('[data-project-modal-overlay]')
+    const projectModalClose = projectModalItems[i].querySelector('[data-project-modal-close]')
+    
+    if (projectLink && projectModalOverlay) {
+        projectLink.addEventListener('click', function (e) {
+            e.preventDefault()
+            // Move modal to body to ensure it's not constrained by parent positioning
+            if (projectModalOverlay.parentElement !== document.body) {
+                document.body.appendChild(projectModalOverlay)
+            }
+            projectModalOverlay.classList.add('active')
+            document.body.style.overflow = 'hidden'
+        })
+    }
+    
+    if (projectModalClose) {
+        projectModalClose.addEventListener('click', function (e) {
+            e.preventDefault()
+            projectModalOverlay.classList.remove('active')
+            document.body.style.overflow = ''
+            // Move modal back to original position after closing
+            setTimeout(() => {
+                if (projectModalOverlay.parentElement === document.body) {
+                    projectModalItems[i].appendChild(projectModalOverlay)
+                }
+            }, 400) // Wait for transition to complete
+        })
+    }
+    
+    if (projectModalOverlay) {
+        projectModalOverlay.addEventListener('click', function (e) {
+            if (e.target === projectModalOverlay) {
+                projectModalOverlay.classList.remove('active')
+                document.body.style.overflow = ''
+                // Move modal back to original position after closing
+                setTimeout(() => {
+                    if (projectModalOverlay.parentElement === document.body) {
+                        projectModalItems[i].appendChild(projectModalOverlay)
+                    }
+                }, 400) // Wait for transition to complete
+            }
+        })
+    }
+}
 
 // custom select variables
 const select = document.querySelector('[data-select]')

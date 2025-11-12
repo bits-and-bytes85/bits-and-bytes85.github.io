@@ -831,7 +831,7 @@ automated code reviews and security checks across software teams, improving code
               </li>
 
               <li class="select-item">
-                <button data-select-item>Java Projects</button>
+                <button data-select-item>Random Projects</button>
               </li>
 
               <li class="select-item">
@@ -847,24 +847,13 @@ automated code reviews and security checks across software teams, improving code
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web design and development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="web design and development" data-project-modal>
+              <a href="#" class="project-link">
                 <figure class="project-img">
                   <img src="./assets/images/project-2.png" alt="finance" loading="lazy">
                   <div class="project-item-icon-box">
-                    <a class="cta" href="#google">css modal</a>
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  
-                  <div id="google" class="modaloverlay">
-                    <div class="modal">
-                      <a href="#close" class="close">&times;</a>
-                      <div>
-                        <h1>OpenEXA</h1>
-                        <p>Used CSS, HTML, and JavaScript to create a functional token swap application using the Uniswap API.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
                 </figure>
 
                 <h3 class="project-title">OpenEXA</h3>
@@ -872,69 +861,76 @@ automated code reviews and security checks across software teams, improving code
                 <p class="project-category">Web Design and Development</p>
 
               </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design and development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"> <a class="cta" href="#google1">css modal</a></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy">
-                </figure>
-                <div id="google1" class="modaloverlay">
-                  <div class="modal">
-                    <a href="#close" class="close">&times;</a>
-                    <div>
-                      <h1>OpenEXA Dashboards</h1>
-                      <p>Built branded and functional dashboards using financial machine learning models to display analytics for clients.
-                        </p>
-                    </div>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>OpenEXA</h1>
+                    <p>Used CSS, HTML, and JavaScript to create a functional token swap application using the Uniswap API.</p>
                   </div>
                 </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design and development" data-project-modal>
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy">
+                </figure>
+
                 <h3 class="project-title">OpenEXA Dashboards</h3>
 
                 <p class="project-category">Web Design and Development</p>
 
               </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"> <a class="cta" href="#google2">css modal</a></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="orizon" loading="lazy">
-                </figure>
-                <div id="google2" class="modaloverlay">
-                  <div class="modal">
-                    <a href="#close" class="close">&times;</a>
-                    <div>
-                      <h1>Satellite Convolutional Neural Network</h1>
-                      <p>Used Python, Tensorflow, and Keras to build a Convolutional Neural network to analyze satellite images for ecological characteristics.</p>
-                    </div>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>OpenEXA Dashboards</h1>
+                    <p>Built branded and functional dashboards using financial machine learning models to display analytics for clients.</p>
                   </div>
                 </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning" data-project-modal>
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.png" alt="orizon" loading="lazy">
+                </figure>
+
                 <h3 class="project-title">Deep Learning</h3>
 
                 <p class="project-category">Machine Learning</p>
 
               </a>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>Satellite Convolutional Neural Network</h1>
+                    <p>Used Python, Tensorflow, and Keras to build a Convolutional Neural network to analyze satellite images for ecological characteristics.</p>
+                  </div>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="non-academic projects">
-              <a href="#">
-
+            <li class="project-item  active" data-filter-item data-category="non-academic projects" data-project-modal>
+              <a href="#" class="project-link">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-9.png" alt="fundo" loading="lazy">
                 </figure>
 
@@ -943,8 +939,74 @@ automated code reviews and security checks across software teams, improving code
                 <p class="project-category">Non-Academic Projects</p>
 
               </a>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>Pig Latin Translator</h1>
+                    <p>A fun project that translates English text into Pig Latin, demonstrating string manipulation and language processing concepts.</p>
+                  </div>
+                </div>
+              </div>
             </li>
-            
+
+            <li class="project-item  active" data-filter-item data-category="web design and development" data-project-modal>
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GitGood</h3>
+
+                <p class="project-category">Web Design and Development</p>
+
+              </a>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>GitGood</h1>
+                    <p>Built a interactive, retro-style game to teach beginner programmers about Git commands.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li class="project-item  active" data-filter-item data-category="machine learning" data-project-modal>
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Landslide Susceptibility Prediction</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+              
+              <div class="modaloverlay" data-project-modal-overlay>
+                <div class="modal">
+                  <button class="close" data-project-modal-close>&times;</button>
+                  <div>
+                    <h1>Landslide Susceptibility Prediction</h1>
+                    <p>Collected ArcGIS datasets containing geological characteristics like soil type, elevation, etc. </p>
+                    <p>Leveraged the MATLAB Deep Learning toolkit to build a Cascade Forward Neural Network to predict susceptibility for a given region </p>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+          
            <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>

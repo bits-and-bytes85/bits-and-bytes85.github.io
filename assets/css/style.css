@@ -138,7 +138,7 @@
 }
 
 .modaloverlay {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.75);
   bottom: 0;
   left: 0;
   opacity: 0;
@@ -153,49 +153,95 @@
   z-index: 1;
   display: none;
   font-size: 16px;
-  
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.modaloverlay:target{
-  display: block;
+.modaloverlay:target,
+.modaloverlay.active {
+  display: flex;
   opacity: 1;
   pointer-events: auto;
   z-index: 99999;
 }
 
 .modal {
-  
-    background-color: white;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
-    padding: 1em;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    text-size-adjust: auto;
-    @media (min-width: 60em) {
-      height: 85%;
-      margin: 5% auto;
-      max-height: 40em;
-      max-width: 70em;
-      width: 90%;
-    }
-    
-  }
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  box-shadow: var(--shadow-5);
+  position: relative;
+  margin: 0 auto;
+  padding: 30px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  text-size-adjust: auto;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: var(--transition-2);
+}
 
-  .close {
-    background-color: rgb(1, 27, 2);
-    color: white;
-    font-size: 24px;
-    padding: 8px 10px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-decoration: none;
-    top: 0;
-    z-index: 1;
-    
+.modaloverlay.active .modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal h1 {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+  margin-bottom: 15px;
+}
+
+.modal p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+@media (min-width: 580px) {
+  .modal {
+    padding: 40px;
+    max-width: 650px;
   }
+  
+  .modal h1 {
+    font-size: var(--fs-1);
+  }
+}
+
+.close {
+  background: var(--onyx);
+  color: var(--white-2);
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-1);
+  opacity: 0.7;
+}
+
+.close:hover {
+  background: var(--eerie-black-1);
+  opacity: 1;
+}
 
 
 
