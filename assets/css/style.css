@@ -202,6 +202,43 @@
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.modal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--jet);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-decoration: none;
+  padding: 10px 18px;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+.modal-link:hover {
+  background: var(--bg-gradient-jet);
+  border-color: var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+.modal-link ion-icon {
+  font-size: 18px;
 }
 
 @media (min-width: 580px) {
